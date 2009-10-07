@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  state: MyString
+  billing_status: MyString
+  bill_on: 2009-10-07
+
+two:
+  name: MyString
+  state: MyString
+  billing_status: MyString
+  bill_on: 2009-10-07
