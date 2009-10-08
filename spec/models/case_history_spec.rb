@@ -36,8 +36,7 @@ describe CaseHistory do
     end
 
     it "should set the completion date after complete!" do
-      @case_history.complete
-      @case_history.should be_complete
+      lambda{ @case_history.complete }.should change(@case_history, :completed_on).from(nil).to(Date.today)
     end
   end
 end

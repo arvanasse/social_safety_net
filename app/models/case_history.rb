@@ -11,6 +11,10 @@ class CaseHistory < ActiveRecord::Base
     state :pending
     state :complete
 
+    after_transition any=>:complete do |history, trans|
+      history.update_attribute :completed_on, Date.today
+    end
+
     event :complete do 
       transition all => :complete
     end
