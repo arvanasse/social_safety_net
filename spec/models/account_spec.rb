@@ -74,4 +74,16 @@ describe Account do
       lambda{ @account.mark_not_paid! }.should change(@account, :state).to( "suspended" )
     end
   end
+
+  describe "when billing is past due 60 days" do
+    before :each do 
+      @account = Account.create @valid_attributes
+      2.times{ @account.mark_not_paid }
+      @account.should be_past_due_60_days
+    end
+
+    it "should return to active if paid in full" do
+      lambda{ @account.paid_in_full }.should change(@account, :state).from( "suspended" ).to( "active" )
+    end
+  end
 end
