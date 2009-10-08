@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cost_center: 
+  parent: 
+  state: MyString
+  title: MyString
+  reference: MyString
+  opened_on: 2009-10-08
+  closed_on: 2009-10-08
+
+two:
+  cost_center: 
+  parent: 
+  state: MyString
+  title: MyString
+  reference: MyString
+  opened_on: 2009-10-08
+  closed_on: 2009-10-08

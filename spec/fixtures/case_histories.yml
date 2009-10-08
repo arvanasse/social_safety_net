@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  managed_case: 
+  state: MyString
+  added_on: 2009-10-08
+  due_on: 2009-10-08
+  completed_on: 2009-10-08
+  detail: 
+
+two:
+  managed_case: 
+  state: MyString
+  added_on: 2009-10-08
+  due_on: 2009-10-08
+  completed_on: 2009-10-08
+  detail: 
