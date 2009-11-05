@@ -20,7 +20,7 @@
       %span.date= history.weeks.ago.strftime('%b %d')
       %span.description
         = Faker::Lorem.sentence
-        = link_to(image_tag('more.png'), root_path, :class => "toggler")
+        = link_to('More', root_path, :class => "toggler down")
         .hidden.more= Faker::Lorem.paragraph
 %h2 Who&apos;s Involved
 %ul.people

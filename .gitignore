@@ -17,4 +17,3 @@ tmp/restart.txt
 *.swp
 .DS_Store
 nbproject/*
-*.png

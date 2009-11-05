@@ -10,6 +10,10 @@
     #wrap
       #header
         %h1 Case Manager
+        %ul.tabs.right
+          %li= link_to("Home", root_path)
+          %li= link_to("Cases", root_path)
+          %li= link_to("People", root_path)
         %ul.tabs
           %li= link_to("Case 1234", root_path)
           %li= link_to("Case 14", root_path)
