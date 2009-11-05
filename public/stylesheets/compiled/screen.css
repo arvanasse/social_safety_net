@@ -508,64 +508,65 @@ body.bp {
     /* line 66, ../sass/screen.sass */
     body.bp #content h2 {
       border-bottom: 1px solid #cccccc; }
-    /* line 68, ../sass/screen.sass */
+    /* line 69, ../sass/screen.sass */
     body.bp #content ul.history, body.bp #content ul.people {
       font-size: 110%; }
       /* line 8, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.sass */
       body.bp #content ul.history li, body.bp #content ul.people li {
         list-style-type: none;
         margin-left: 0px; }
-      /* line 72, ../sass/screen.sass */
-      body.bp #content ul.history li span, body.bp #content ul.people li span {
-        padding: .5em 0; }
-      /* line 74, ../sass/screen.sass */
-      body.bp #content ul.history li span.date, body.bp #content ul.people li span.date {
-        display: inline;
-        float: left;
-        margin-right: 10px;
-        width: 70px; }
-        /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
-        * html body.bp #content ul.history li span.date, * html body.bp #content ul.people li span.date {
-          overflow-x: hidden; }
-      /* line 76, ../sass/screen.sass */
-      body.bp #content ul.history li span.description, body.bp #content ul.people li span.description {
-        display: inline;
-        float: left;
-        margin-right: 0;
-        width: 550px; }
-        /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
-        * html body.bp #content ul.history li span.description, * html body.bp #content ul.people li span.description {
-          overflow-x: hidden; }
-      /* line 78, ../sass/screen.sass */
-      body.bp #content ul.history li.odd span.description, body.bp #content ul.people li.odd span.description {
-        background-color: #eee; }
-      /* line 80, ../sass/screen.sass */
-      body.bp #content ul.history li a, body.bp #content ul.people li a {
-        color: transparent;
-        background-image: url(/images/updown.png);
-        background-position: 0px 0px;
-        background-repeat: no-repeat; }
-        /* line 85, ../sass/screen.sass */
-        body.bp #content ul.history li a.down, body.bp #content ul.people li a.down {
-          background-position: 0px -16px; }
-  /* line 87, ../sass/screen.sass */
+    /* line 73, ../sass/screen.sass */
+    body.bp #content ul li span {
+      padding: .5em 0; }
+    /* line 75, ../sass/screen.sass */
+    body.bp #content ul li span.date {
+      display: inline;
+      float: left;
+      margin-right: 10px;
+      width: 70px; }
+      /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+      * html body.bp #content ul li span.date {
+        overflow-x: hidden; }
+    /* line 77, ../sass/screen.sass */
+    body.bp #content ul li span.description {
+      display: inline;
+      float: left;
+      margin-right: 0;
+      width: 550px; }
+      /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
+      * html body.bp #content ul li span.description {
+        overflow-x: hidden; }
+    /* line 79, ../sass/screen.sass */
+    body.bp #content ul li.odd span.description {
+      background-color: #eee; }
+    /* line 83, ../sass/screen.sass */
+    body.bp #content ul.history li a {
+      color: transparent;
+      background-image: url(/images/updown.png);
+      background-position: 0px 0px;
+      background-repeat: no-repeat; }
+      /* line 88, ../sass/screen.sass */
+      body.bp #content ul.history li a.down {
+        background-position: 0px -16px; }
+  /* line 90, ../sass/screen.sass */
   body.bp #sidebar {
     display: inline;
     float: left;
     margin-right: 0;
     width: 230px;
+    padding: 1em 0;
     background-color: yellow; }
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #sidebar {
       overflow-x: hidden; }
-    /* line 90, ../sass/screen.sass */
+    /* line 94, ../sass/screen.sass */
     body.bp #sidebar img.client {
       margin: 0 auto;
       display: block; }
-    /* line 93, ../sass/screen.sass */
+    /* line 97, ../sass/screen.sass */
     body.bp #sidebar h4 {
       border-bottom: 1px solid #cccccc; }
-  /* line 95, ../sass/screen.sass */
+  /* line 99, ../sass/screen.sass */
   body.bp #footer {
     display: inline;
     float: left;
@@ -574,7 +575,7 @@ body.bp {
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #footer {
       overflow-x: hidden; }
-    /* line 97, ../sass/screen.sass */
+    /* line 101, ../sass/screen.sass */
     body.bp #footer p {
       text-align: center; }
 

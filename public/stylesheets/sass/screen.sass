@@ -65,9 +65,10 @@ body.bp
       +column(17)
     h2
       border-bottom= 1px solid !border_color
-    ul.history, ul.people
-      +no-bullets
-      font-size: 110%
+    ul
+      &.history, &.people
+        +no-bullets
+        font-size: 110%
       li
         span
           padding: .5em 0
@@ -77,15 +78,18 @@ body.bp
           +column(14, true)
         &.odd span.description
           background-color: #eee
-        a
-          color: transparent
-          background-image: url(/images/updown.png)
-          background-position: 0px 0px
-          background-repeat: no-repeat
-          &.down
-            background-position: 0px -16px
+      &.history
+        li
+          a
+            color: transparent
+            background-image: url(/images/updown.png)
+            background-position: 0px 0px
+            background-repeat: no-repeat
+            &.down
+              background-position: 0px -16px
   #sidebar
     +column(6, true)
+    padding: 1em 0
     background-color: yellow
     img.client
       margin: 0 auto
