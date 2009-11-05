@@ -1,0 +1,83 @@
+@import blueprint/reset.sass
+@import partials/base.sass
+@import blueprint
+@import blueprint/modules/scaffolding.sass
+@import compass/utilities.sass
+
++blueprint-typography("body.bp")
++blueprint-scaffolding("body.bp")
+
+!background_color= #369
+!border_color= #ccc
+
+body.bp
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  background-color= !background_color
+  a
+    +hover-link
+  .hidden
+    display: none
+  #wrap
+    +container
+    background-color: #fff
+  #header
+    +column(24, true)
+    position: relative
+    margin-bottom: 2em
+    background-color= !background_color
+    h1
+      color: #fff
+      padding: .5em 0
+    ul.tabs
+      +horizontal-list
+      li
+        margin: 0
+        padding: 0
+        padding-right: 2px
+        a
+          display: block
+          padding: .5em
+          background-color: red
+        &.selected a
+          background-color: #fff
+    #user
+      position: absolute
+      right: .5em
+      top: .5em
+      ul
+        +horizontal-list
+  #content
+    +prepend(1)
+    +column(23, true)
+    &.with-sidebar
+      +column(17)
+    h2
+      border-bottom= 1px solid !border_color
+    ul.history, ul.people
+      +no-bullets
+      font-size: 110%
+      li
+        span
+          padding: .5em 0
+        span.date
+          +column(2)
+        span.description
+          +column(14, true)
+        &.odd span.description
+          background-color: #eee
+  #sidebar
+    +column(6, true)
+    background-color: yellow
+    img.client
+      margin: 0 auto
+      display: block
+    h4
+      border-bottom= 1px solid !border_color
+  #footer
+    +column(24)
+    p
+      text-align: center
+form.bp
+  +blueprint-form
