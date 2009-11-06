@@ -1,0 +1,19 @@
+- current "people"
+%h2 People
+- (rand(10) + 1).times do |person|
+  %div.person{:class => cycle('odd', 'even')}
+    .image
+      = rand(20).even? ? image_tag('bubba.jpg') : image_tag('missing.jpg')
+    .info
+      %h5
+        = Faker::Name.name
+      .addr.quiet
+        = "#{Faker::Address.street_address} #{Faker::Address.city}, #{Faker::Address.us_state}"
+      .assist
+        %p
+          %strong Latest Assistance: 
+          = Faker::Lorem.sentence
+    .tools
+      = link_to(pluralize(rand(42), "Case"), root_path)
+      = link_to('Create a New Case', root_path)
+      = link_to("View #{Faker::Name.first_name}'s Info", root_path)

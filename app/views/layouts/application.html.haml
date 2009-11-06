@@ -9,15 +9,16 @@
   %body.bp
     #wrap
       #header
-        %h1 Case Manager
+        %h1 Carolina People Helpers
+        %h2 Case Management
         %ul.tabs.right
           %li= link_to("Home", root_path)
           %li= link_to("Cases", root_path)
-          %li= link_to("People", root_path)
+          %li{:class => (controller.action_name == 'list' ? 'selected' : nil)}= link_to("People", list_site_path)
         %ul.tabs
           %li= link_to("Case 1234", root_path)
           %li= link_to("Case 14", root_path)
-          %li.selected= link_to("Case 124", root_path)
+          %li{:class => (controller.action_name == 'index' ? 'selected' : nil)}= link_to("Case 124", root_path)
           %li= link_to("Case 1354", root_path)
         #user
           %ul
@@ -26,7 +27,7 @@
             %li= link_to("Log Out", root_path)
       #content{:class => (@content_for_sidebar.nil? ? nil : 'with-sidebar')}
         = yield
-      #sidebar
-        = yield(:sidebar)
+      = render :partial => 'layouts/sidebar' if @content_for_sidebar
       #footer
-        %p Copyright &copy;2009
+        %p.quiet 
+          Copyright &copy;2009 Rails on Softwares Inc. Ltd. LLC

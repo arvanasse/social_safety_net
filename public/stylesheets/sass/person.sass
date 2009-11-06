@@ -1,0 +1,29 @@
+.person
+  +column(22, true)
+  padding: 1em 5px
+  font-size: 110%
+  &:hover
+    background-color= !hover_color !important
+    cursor: pointer
+  .image
+    +column(2)
+    img
+      background-color: #fff
+      padding: 3px
+      width: 60px
+      display: block
+      margin: 0 auto
+  .info
+    +column(16)
+    .addr
+    h5
+      margin: 0
+      font-size: 110%
+    p
+      margin-bottom: 0
+  .tools
+    +column(4, true)
+    text-align: right
+    font-size: 90%
+    a
+      display: block

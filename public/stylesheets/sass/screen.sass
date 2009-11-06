@@ -4,11 +4,15 @@
 @import blueprint/modules/scaffolding.sass
 @import compass/utilities.sass
 
+!background_color= #434D53
+!border_color= #ddd
+!hover_color= #E0C07E
+!even_color= #d8d8d8
+
+@import person.sass
+
 +blueprint-typography("body.bp")
 +blueprint-scaffolding("body.bp")
-
-!background_color= #369
-!border_color= #ccc
 
 body.bp
   +blueprint-utilities
@@ -19,17 +23,26 @@ body.bp
     +hover-link
   .hidden
     display: none
+  .even
+    background-color= !even_color
   #wrap
     +container
     background-color: #fff
   #header
     +column(24, true)
     position: relative
-    margin-bottom: 2em
     background-color= !background_color
+    h1, h2
+      font-weight: bold
     h1
       color: #fff
-      padding: .5em 0
+      padding: .5em 0 0 0
+      margin: 0
+    h2
+      padding: 0
+      margin: 0 0 1em 0
+      color: #bbb
+      font-size: 140%
     ul.tabs
       +horizontal-list
       float: left
@@ -40,11 +53,11 @@ body.bp
         a
           display: block
           padding: .5em
-          background-color: red
+          background-color: #718F9F
           font-weight: bold
           color: #fff
           &:hover
-            background-color: #ccc
+            background-color= !hover_color 
         &.selected a
           background-color: #fff
           color: #333
@@ -56,16 +69,25 @@ body.bp
       position: absolute
       right: .5em
       top: .5em
+      color: #eee
+      a
+        +link-colors(#eee, #ccc)
       ul
         +horizontal-list
+        li
+          border-left: 1px solid #888
+          &:first-child
+            border: none
   #content
     +prepend(1)
     +column(23, true)
     &.with-sidebar
       +column(17)
     h2
+      margin-top: 1em
       border-bottom= 1px solid !border_color
     ul
+      margin: 0
       &.history, &.people
         +no-bullets
         font-size: 110%
@@ -75,30 +97,47 @@ body.bp
         span.date
           +column(2)
         span.description
-          +column(14, true)
+          +column(15, true)
         &.odd span.description
           background-color: #eee
       &.history
         li
           a
             color: transparent
-            background-image: url(/images/updown.png)
-            background-position: 0px 0px
-            background-repeat: no-repeat
+            background: url(/images/updown.png) 0px 0px no-repeat
             &.down
               background-position: 0px -16px
   #sidebar
     +column(6, true)
-    padding: 1em 0
-    background-color: yellow
+    padding: 2em 0
+    background: #ededed 
+    text-align: center
     img.client
-      margin: 0 auto
+      background-color: #fff
+      padding: 5px
+      margin: 0 auto .5em auto
       display: block
+    span.addr
+      display: block
+    h3
+      margin: 0
+      font-weight: bold
+      color: #444
     h4
+      color: #444
+      font-weight: bold
+      text-align: left
+      width: 80%
+      margin: 1em auto 0 auto
       border-bottom= 1px solid !border_color
+    p
+      width: 80%
+      margin: 0 auto
+      text-align: left
   #footer
     +column(24)
     p
       text-align: center
+      margin: .5em auto
 form.bp
   +blueprint-form

@@ -1,23 +1,22 @@
 - content_for(:sidebar) do
-  = image_tag('missing.jpg', :alt => 'Picture of Client', :class => 'client')
+  = image_tag('bubba.jpg', :alt => 'Picture of Client', :class => 'client')
   %h3
     Bubba Gump
   %address
-    1234 Main St
-    %br
-    Boiling Springs, SC 29316
+    %span.addr 1234 Main St
+    %span.addr Boiling Springs, SC 29316
   %h4 Reminders
   %p
     Nov. 12: Call Shirley
   %h4 Assistance
   %p
-    = Date.today
+    Oct 31: Heating bill
 
 %h2 History
 %ul.history
   - (1..5).each do |history|
     %li{:id => "history_#{history}", :class => cycle('odd', 'even')}
-      %span.date= history.weeks.ago.strftime('%b %d')
+      %span.date= history.weeks.ago.strftime('%B %d')
       %span.description
         = Faker::Lorem.sentence
         = link_to('More', root_path, :class => "toggler down")
