@@ -96,8 +96,8 @@ body.bp
       border-bottom= 1px solid !border_color
     ul
       margin: 0
+      +no-bullets
       &.history, &.people
-        +no-bullets
         font-size: 110%
       li
         span
@@ -144,6 +144,9 @@ body.bp
       width: 80%
       margin: 0 auto
       text-align: left
+    dt, dd
+      text-align: left
+      padding-left: 1em
   #footer
     +column(24)
     p

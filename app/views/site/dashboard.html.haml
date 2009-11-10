@@ -1,0 +1,20 @@
+- content_for :sidebar do
+  %h3
+    Recently
+  %hr
+  %dl
+    - 10.times do
+      %dt
+        = Faker::Name.name
+        = link_to "(Case #{rand(9999)})", root_path
+      %dd
+        = "Added #{%w{attachment reminder note email}[rand(4)]}"
+%h2 Reminders
+%ul
+  - 10.times do |history|
+    %li{:id => "history_#{history}", :class => cycle('odd', 'even')}
+      %span.date
+        %abbr{:title => history.weeks.ago}= "#{distance_of_time_in_words_to_now(history.weeks.ago)} ago"
+      %span.description
+        = Faker::Lorem.sentence
+        = link_to "(Case #{rand(9999)})", root_path
