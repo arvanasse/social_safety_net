@@ -8,7 +8,6 @@ index/*
 log/*.log
 log/*.log.*
 public/system/**/*
-public/javascripts/*.js
 public/sprockets.js
 tmp/**/*
 tmp/query*
