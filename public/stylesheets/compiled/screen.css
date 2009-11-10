@@ -338,7 +338,7 @@ body.bp hr.space {
   background: #fff;
   color: #fff; }
 
-/* line 17, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 body.bp {
   background-color: #434d53; }
   /* line 9, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_utilities.sass */
@@ -430,19 +430,19 @@ body.bp {
   body.bp .removed {
     background: #990000;
     color: white; }
-  /* line 22, ../sass/screen.sass */
+  /* line 29, ../sass/screen.sass */
   body.bp a {
     text-decoration: none; }
     /* line 4, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/links/_hover_link.sass */
     body.bp a:hover {
       text-decoration: underline; }
-  /* line 24, ../sass/screen.sass */
+  /* line 31, ../sass/screen.sass */
   body.bp .hidden {
     display: none; }
-  /* line 26, ../sass/screen.sass */
+  /* line 33, ../sass/screen.sass */
   body.bp .even {
     background-color: #d8d8d8; }
-  /* line 28, ../sass/screen.sass */
+  /* line 35, ../sass/screen.sass */
   body.bp #wrap {
     width: 950px;
     margin: 0 auto;
@@ -452,7 +452,7 @@ body.bp {
     /* line 5, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/general/_hacks.sass */
     body.bp #wrap {
       display: block; }
-  /* line 31, ../sass/screen.sass */
+  /* line 38, ../sass/screen.sass */
   body.bp #header {
     display: inline;
     float: left;
@@ -463,21 +463,21 @@ body.bp {
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #header {
       overflow-x: hidden; }
-    /* line 35, ../sass/screen.sass */
+    /* line 42, ../sass/screen.sass */
     body.bp #header h1, body.bp #header h2 {
       font-weight: bold; }
-    /* line 37, ../sass/screen.sass */
+    /* line 44, ../sass/screen.sass */
     body.bp #header h1 {
       color: #fff;
       padding: .5em 0 0 0;
       margin: 0; }
-    /* line 41, ../sass/screen.sass */
+    /* line 48, ../sass/screen.sass */
     body.bp #header h2 {
       padding: 0;
       margin: 0 0 1em 0;
       color: #bbb;
       font-size: 140%; }
-    /* line 46, ../sass/screen.sass */
+    /* line 53, ../sass/screen.sass */
     body.bp #header ul.tabs {
       margin: 0;
       padding: 0;
@@ -504,44 +504,45 @@ body.bp {
         /* line 42, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
         body.bp #header ul.tabs li.last {
           padding-right: 0px; }
-      /* line 49, ../sass/screen.sass */
+      /* line 56, ../sass/screen.sass */
       body.bp #header ul.tabs li {
         margin: 0;
         padding: 0;
         padding-right: 2px; }
-        /* line 53, ../sass/screen.sass */
+        /* line 60, ../sass/screen.sass */
         body.bp #header ul.tabs li a {
           display: block;
-          padding: .5em;
+          padding: .65em;
           background-color: #718F9F;
           font-weight: bold;
+          font-size: 110%;
           color: #fff; }
-          /* line 59, ../sass/screen.sass */
+          /* line 67, ../sass/screen.sass */
           body.bp #header ul.tabs li a:hover {
             background-color: #e0c07e; }
-        /* line 61, ../sass/screen.sass */
+        /* line 69, ../sass/screen.sass */
         body.bp #header ul.tabs li.selected a {
           background-color: #fff;
           color: #333; }
-    /* line 64, ../sass/screen.sass */
+    /* line 72, ../sass/screen.sass */
     body.bp #header ul.right {
       float: right; }
-      /* line 66, ../sass/screen.sass */
+      /* line 74, ../sass/screen.sass */
       body.bp #header ul.right li {
         padding: 0 0 0 2px; }
-    /* line 68, ../sass/screen.sass */
+    /* line 76, ../sass/screen.sass */
     body.bp #header #user {
       position: absolute;
       right: .5em;
       top: .5em;
       color: #eee; }
-      /* line 73, ../sass/screen.sass */
+      /* line 81, ../sass/screen.sass */
       body.bp #header #user a {
         color: #eeeeee; }
         /* line 18, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/links/_link_colors.sass */
         body.bp #header #user a:hover {
           color: #cccccc; }
-      /* line 75, ../sass/screen.sass */
+      /* line 83, ../sass/screen.sass */
       body.bp #header #user ul {
         margin: 0;
         padding: 0;
@@ -567,13 +568,13 @@ body.bp {
           /* line 42, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_horizontal_list.sass */
           body.bp #header #user ul li.last {
             padding-right: 0px; }
-        /* line 77, ../sass/screen.sass */
+        /* line 85, ../sass/screen.sass */
         body.bp #header #user ul li {
           border-left: 1px solid #888; }
-          /* line 79, ../sass/screen.sass */
+          /* line 87, ../sass/screen.sass */
           body.bp #header #user ul li:first-child {
             border: none; }
-  /* line 81, ../sass/screen.sass */
+  /* line 89, ../sass/screen.sass */
   body.bp #content {
     padding-left: 40px;
     display: inline;
@@ -583,7 +584,7 @@ body.bp {
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #content {
       overflow-x: hidden; }
-    /* line 84, ../sass/screen.sass */
+    /* line 92, ../sass/screen.sass */
     body.bp #content.with-sidebar {
       display: inline;
       float: left;
@@ -592,52 +593,53 @@ body.bp {
       /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
       * html body.bp #content.with-sidebar {
         overflow-x: hidden; }
-    /* line 86, ../sass/screen.sass */
+    /* line 94, ../sass/screen.sass */
     body.bp #content h2 {
       margin-top: 1em;
       border-bottom: 1px solid #dddddd; }
-    /* line 89, ../sass/screen.sass */
+    /* line 97, ../sass/screen.sass */
     body.bp #content ul {
       margin: 0; }
-      /* line 91, ../sass/screen.sass */
+      /* line 99, ../sass/screen.sass */
       body.bp #content ul.history, body.bp #content ul.people {
         font-size: 110%; }
         /* line 8, ../../../../../.gem/gems/compass-0.8.17/frameworks/compass/stylesheets/compass/utilities/lists/_bullets.sass */
         body.bp #content ul.history li, body.bp #content ul.people li {
           list-style-type: none;
           margin-left: 0px; }
-      /* line 95, ../sass/screen.sass */
+      /* line 103, ../sass/screen.sass */
       body.bp #content ul li span {
         padding: .5em 0; }
-      /* line 97, ../sass/screen.sass */
+      /* line 105, ../sass/screen.sass */
       body.bp #content ul li span.date {
         display: inline;
         float: left;
         margin-right: 10px;
-        width: 70px; }
+        width: 110px;
+        font-size: 80%; }
         /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
         * html body.bp #content ul li span.date {
           overflow-x: hidden; }
-      /* line 99, ../sass/screen.sass */
+      /* line 108, ../sass/screen.sass */
       body.bp #content ul li span.description {
         display: inline;
         float: left;
         margin-right: 0;
-        width: 590px; }
+        width: 550px; }
         /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
         * html body.bp #content ul li span.description {
           overflow-x: hidden; }
-      /* line 101, ../sass/screen.sass */
+      /* line 110, ../sass/screen.sass */
       body.bp #content ul li.odd span.description {
         background-color: #eee; }
-      /* line 105, ../sass/screen.sass */
+      /* line 114, ../sass/screen.sass */
       body.bp #content ul.history li a {
         color: transparent;
         background: url(/images/updown.png) 0px 0px no-repeat; }
-        /* line 108, ../sass/screen.sass */
+        /* line 117, ../sass/screen.sass */
         body.bp #content ul.history li a.down {
           background-position: 0px -16px; }
-  /* line 110, ../sass/screen.sass */
+  /* line 119, ../sass/screen.sass */
   body.bp #sidebar {
     display: inline;
     float: left;
@@ -649,21 +651,27 @@ body.bp {
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #sidebar {
       overflow-x: hidden; }
-    /* line 115, ../sass/screen.sass */
+    /* line 18, ../sass/screen.sass */
+    .boxshadow body.bp #sidebar {
+      border: none;
+      -webkit-box-shadow: #666666 1px 1px 1px;
+      -moz-box-shadow: #666666 1px 1px 1px;
+      box-shadow: #666666 1px 1px 1px; }
+    /* line 125, ../sass/screen.sass */
     body.bp #sidebar img.client {
       background-color: #fff;
       padding: 5px;
       margin: 0 auto .5em auto;
       display: block; }
-    /* line 120, ../sass/screen.sass */
+    /* line 130, ../sass/screen.sass */
     body.bp #sidebar span.addr {
       display: block; }
-    /* line 122, ../sass/screen.sass */
+    /* line 132, ../sass/screen.sass */
     body.bp #sidebar h3 {
       margin: 0;
       font-weight: bold;
       color: #444; }
-    /* line 126, ../sass/screen.sass */
+    /* line 136, ../sass/screen.sass */
     body.bp #sidebar h4 {
       color: #444;
       font-weight: bold;
@@ -671,12 +679,12 @@ body.bp {
       width: 80%;
       margin: 1em auto 0 auto;
       border-bottom: 1px solid #dddddd; }
-    /* line 133, ../sass/screen.sass */
+    /* line 143, ../sass/screen.sass */
     body.bp #sidebar p {
       width: 80%;
       margin: 0 auto;
       text-align: left; }
-  /* line 137, ../sass/screen.sass */
+  /* line 147, ../sass/screen.sass */
   body.bp #footer {
     display: inline;
     float: left;
@@ -685,7 +693,7 @@ body.bp {
     /* line 101, ../../../../../.gem/gems/compass-0.8.17/frameworks/blueprint/stylesheets/blueprint/modules/_grid.sass */
     * html body.bp #footer {
       overflow-x: hidden; }
-    /* line 139, ../sass/screen.sass */
+    /* line 149, ../sass/screen.sass */
     body.bp #footer p {
       text-align: center;
       margin: .5em auto; }

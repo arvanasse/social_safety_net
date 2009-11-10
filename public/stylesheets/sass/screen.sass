@@ -14,6 +14,13 @@
 +blueprint-typography("body.bp")
 +blueprint-scaffolding("body.bp")
 
+=box-shadow(!ho, !vo, !b, !c)
+  .boxshadow &
+    border: none
+    -webkit-box-shadow= !ho !vo !b !c
+    -moz-box-shadow= !ho !vo !b !c
+    box-shadow= !ho !vo !b !c 
+
 body.bp
   +blueprint-utilities
   +blueprint-debug
@@ -52,9 +59,10 @@ body.bp
         padding-right: 2px
         a
           display: block
-          padding: .5em
+          padding: .65em
           background-color: #718F9F
           font-weight: bold
+          font-size: 110%
           color: #fff
           &:hover
             background-color= !hover_color 
@@ -95,9 +103,10 @@ body.bp
         span
           padding: .5em 0
         span.date
-          +column(2)
+          +column(3)
+          font-size: 80%
         span.description
-          +column(15, true)
+          +column(14, true)
         &.odd span.description
           background-color: #eee
       &.history
@@ -109,6 +118,7 @@ body.bp
               background-position: 0px -16px
   #sidebar
     +column(6, true)
+    +box-shadow(#666, 1px, 1px, 1px)
     padding: 2em 0
     background: #ededed 
     text-align: center

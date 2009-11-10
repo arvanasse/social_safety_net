@@ -1,0 +1,7 @@
+authlogic --version '= 2.1.1'
+state_machine --version '= 0.8.0'
+thoughtbot-paperclip --version '= 2.3.1' --source http://gems.github.com
+faker --version '= 0.3.1'
+stephencelis-dots --version '>= 0' --source http://gems.github.com
+jcnetdev-acts_as_tree --version '>= 1.0.1' --source http://gems.github.com
+compass --version '>= 0.8.17' --source http://gemcutter.org
