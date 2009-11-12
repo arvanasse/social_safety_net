@@ -13,6 +13,7 @@
         %h2 Case Management
         %ul.tabs.right
           %li{:class=>(controller.action_name == 'dashboard' ? 'selected' : nil)}= link_to("Home", dashboard_site_path)
+          %li{:class=>(controller.action_name == 'cases' ? 'selected' : nil)}= link_to("Cases", cases_site_path)
           %li= link_to("Cases", root_path)
           %li{:class => (controller.action_name == 'list' ? 'selected' : nil)}= link_to("People", list_site_path)
         %ul.tabs

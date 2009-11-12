@@ -1,0 +1,32 @@
+- content_for :sidebar do
+  %h3
+    Recently
+  %hr
+  %dl
+    - 10.times do
+      %dt
+        = Faker::Name.name
+        = link_to "(Case #{rand(9999)})", root_path
+      %dd
+        = "Added #{%w{attachment reminder note email}[rand(4)]}"
+
+%h2 Cases
+- (5+rand(10)).times do
+  .managed-case{:class=>cycle('odd', 'even')}
+    .image
+      = rand(20).even? ? image_tag('bubba.jpg') : image_tag('missing.jpg')
+    .info.last
+      %h5
+        = Faker::Name.name
+        = link_to "(Case #{rand(9999)})", root_path
+      .addr.quiet
+        = "#{Faker::Address.street_address} #{Faker::Address.city}, #{Faker::Address.us_state}"
+      .filing.quiet
+        = "Opened #{rand(360).days.ago.strftime('%b %d, %Y')}"
+      .reminder
+        %strong Reminders
+        %ul
+          - 3.times do
+            %li
+              = (30-rand(60)).days.from_now.strftime('%b %d')
+              = Faker::Lorem.sentence
