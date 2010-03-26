@@ -1,0 +1,11 @@
+- form_tag people_path, :class=>'search', :method => :get do
+  %dl
+    %dt= label_tag :query
+    %dd= text_field_tag :query
+  = submit_tag 'Search'
+
+- if @people.empty?
+  %p No people found
+
+- else
+  %p= "#{@people.size} #{pluralize(@people.size, 'match')}"

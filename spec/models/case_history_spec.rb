@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe CaseHistory do
   before(:each) do
     @valid_attributes = {
-      :managed_case => mock_model(ManagedCase),
+      :managed_case => mock_model(ManagedCase, 'destroyed?' => false),
       :added_on => Date.today,
       :due_on => Date.today,
       :completed_on => Date.today

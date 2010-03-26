@@ -4,7 +4,7 @@ describe User do
   before(:each) do
     @valid_attributes = {
       :email => "person@test.com",
-      :account => mock_model(Account),
+      :account => mock_model(Account, 'destroyed?' => false),
       :password => 'welcome',
       :password_confirmation => 'welcome'
     }

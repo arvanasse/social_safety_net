@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe ManagedCase do
   before(:each) do
     @valid_attributes = {
-      :cost_center => mock_model(CostCenter),
+      :cost_center => mock_model(CostCenter, 'destroyed?' => false),
       :title => "value for title",
       :reference => "value for reference"
     }

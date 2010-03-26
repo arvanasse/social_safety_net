@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091008163252) do
+ActiveRecord::Schema.define(:version => 20100325223543) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(:version => 20091008163252) do
     t.datetime "updated_at"
   end
 
-  add_index "case_histories", ["detail_type", "managed_case_id"], :name => "index_case_histories_on_managed_case_id_and_detail_type"
-  add_index "case_histories", ["due_on", "managed_case_id"], :name => "index_case_histories_on_managed_case_id_and_due_on"
+  add_index "case_histories", ["managed_case_id", "detail_type"], :name => "index_case_histories_on_managed_case_id_and_detail_type"
+  add_index "case_histories", ["managed_case_id", "due_on"], :name => "index_case_histories_on_managed_case_id_and_due_on"
   add_index "case_histories", ["managed_case_id", "state"], :name => "index_case_histories_on_managed_case_id_and_state"
   add_index "case_histories", ["managed_case_id"], :name => "index_case_histories_on_managed_case_id"
 
@@ -69,8 +69,23 @@ ActiveRecord::Schema.define(:version => 20091008163252) do
   add_index "managed_cases", ["cost_center_id", "title"], :name => "index_managed_cases_on_cost_center_id_and_title"
   add_index "managed_cases", ["parent_id"], :name => "index_managed_cases_on_parent_id"
 
+  create_table "people", :force => true do |t|
+    t.string   "last_name"
+    t.string   "first_name"
+    t.string   "middle_name"
+    t.string   "born_on"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip_code"
+    t.string   "zip4"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "type"
+    t.string   "name"
     t.string   "email"
     t.string   "crypted_password"
     t.string   "password_salt"

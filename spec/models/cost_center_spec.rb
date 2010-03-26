@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe CostCenter do
   before(:each) do
     @valid_attributes = {
-      :account => mock_model(Account),
+      :account => mock_model(Account, 'destroyed?' => false),
       :name => "value for name"
     }
   end
