@@ -27,10 +27,10 @@ config.action_mailer.delivery_method = :test
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
 
-config.gem 'rspec',             :lib => false, :version=>'1.2.8'
-config.gem 'rspec-rails',       :lib => false, :version=>'1.2.7.1'
-config.gem 'webrat',            :lib => false, :version=>'0.5.3'
-config.gem 'cucumber',          :lib => false, :version=>'0.3.98'
-config.gem "notahat-machinist", :lib=>'machinist', :source => 'http://gems.github.com', :version=>'1.0.3'
-config.gem 'faker',             :lib => false, :version => "0.3.1"
+config.gem 'rspec-rails'
+config.gem 'rspec'
+config.gem 'webrat'
+config.gem 'cucumber'
+config.gem "machinist"
+config.gem 'faker'
 

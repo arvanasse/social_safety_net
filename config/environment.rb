@@ -15,10 +15,9 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-  config.gem "authlogic", :version => "2.1.1"
+  config.gem "authlogic", :version => "2.1.3"
   config.gem "state_machine", :version => "0.8.0"
-  config.gem "thoughtbot-paperclip", :lib => "paperclip", :version => "2.3.1", :source => "http://gems.github.com"
-  config.gem "stephencelis-dots", :lib => 'dots', :source => 'http://gems.github.com'
+  config.gem "paperclip", :version => "2.3.1"
   config.gem "jcnetdev-acts_as_tree", :lib => 'acts_as_tree', :version => ">= 1.0.1", :source => "http://gems.github.com"
   config.gem "haml", :version => '>= 2.2.3'
   config.gem "compass", :version => '>= 0.8.17', :source => 'http://gemcutter.org'
