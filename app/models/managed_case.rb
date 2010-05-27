@@ -3,6 +3,9 @@ class ManagedCase < ActiveRecord::Base
 
   has_many :case_histories
 
+  has_many :case_participants
+  has_many :participants, :through => :case_participants, :source => :participant
+
   validates_presence_of :cost_center, :title
   validates_numericality_of :cost_center_id, :allow_nil=>true,
                             :greater_than => 0, :only_integer=>true,

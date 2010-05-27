@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.resource  :session, :only => [ :new, :create, :destroy ]
-  map.resources :people
+
+  map.resources :people do |person|
+    person.resources :managed_cases
+  end
 
   map.resources :site, :collection => { :list => :get, :dashboard => :get, :cases=>:get }
   

@@ -10,6 +10,8 @@ class CreatePeople < ActiveRecord::Migration
       t.string :state
       t.string :zip_code
       t.string :zip4
+      t.float  :lat
+      t.float  :lng
 
       t.timestamps
     end

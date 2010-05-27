@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100325223543) do
+ActiveRecord::Schema.define(:version => 20100527181619) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(:version => 20100325223543) do
   add_index "case_histories", ["managed_case_id", "due_on"], :name => "index_case_histories_on_managed_case_id_and_due_on"
   add_index "case_histories", ["managed_case_id", "state"], :name => "index_case_histories_on_managed_case_id_and_state"
   add_index "case_histories", ["managed_case_id"], :name => "index_case_histories_on_managed_case_id"
+
+  create_table "case_participants", :force => true do |t|
+    t.integer  "managed_case_id"
+    t.integer  "participant_id"
+    t.string   "participant_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cost_centers", :force => true do |t|
     t.integer  "account_id"

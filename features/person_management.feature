@@ -21,16 +21,44 @@ Feature: A user wants to search for a person to see if they have been helped by 
     And I press "Search"
     Then I should see "1 match"
 
-  Scenario: User searches for a person with name Donnie Kaufman and one match exists
+  Scenario: User searches for a person with name Donny Kaufman and one match exists
     Given I am on the people page
-    And 1 people exist with the name "Donnie Kaufmann"
-    When I fill in "Query" with "Donnie Kaufmann"
+    And 1 people exist with the name "Donny Kaufmann"
+    When I fill in "Query" with "Donny Kaufmann"
     And I press "Search"
     Then I should see "1 match"
 
-  Scenario: User searches for a person with name Kaufman, Donnie and one match exists
+  Scenario: User searches for a person with name Kaufman, Donny and one match exists
     Given I am on the people page
-    And 1 people exist with the name "Donnie Kaufmann"
-    When I fill in "Query" with "Kaufmann, Donnie"
+    And 1 people exist with the name "Donny Kaufmann"
+    When I fill in "Query" with "Kaufmann, Donny"
     And I press "Search"
     Then I should see "1 match"
+    And I should see 1 person divs with "Kaufmann"
+
+  Scenario: User searches for a person with last name Kaufmann and five matches exist
+    Given I am on the people page
+    And 5 people exist with the last name "Kaufmann"
+    When I fill in "Query" with "Kaufmann"
+    And I press "Search"
+    Then I should see "5 matches"
+    And I should see 5 person divs with "Kaufmann"
+
+  Scenario: User searches for a person with name Donny Kaufmann and six people have the last name Kauffman but only 1 has the first name Donny
+    Given I am on the people page
+    And 5 people exist with the last name "Kaufmann"
+    And 1 people exist with the name "Donny Kaufmann"
+    When I fill in "Query" with "Donny Kaufmann"
+    And I press "Search"
+    Then I should see "1 match"
+    And I should see 1 person divs with "Kaufmann"
+
+  Scenario: User searches for a person with name Kaufmann, Donny and six people have the last name Kauffman but only 1 has the first name Donny
+    Given I am on the people page
+    And 5 people exist with the last name "Kaufmann"
+    And 1 people exist with the name "Donny Kaufmann"
+    When I fill in "Query" with "Kaufmann, Donny"
+    And I press "Search"
+    Then I should see "1 match"
+    And I should see 1 person divs with "Kaufmann"
+
