@@ -1,0 +1,25 @@
+- content_for :sidebar do
+  .action
+    = render :partial => 'shared/search', :locals => { :search_path => agencies_path }
+    %hr{:style=>'margin-top: 1em;' }
+    = link_to "Add Agency", new_agency_path
+
+- if flash[:notice]
+  .notice= flash[:notice]
+
+- if @agencies.empty?
+  %h2 No agencies found
+- else
+  %h2= "#{pluralize(@agencies.size, 'match')}"
+  %ul.agencies
+    - for agency in @agencies do
+      %li{:class=>cycle('odd','even')}
+        - link_to agency_path(agency) do
+          %p.left
+            = agency.name
+            %br
+            = agency.street
+            %br
+            = "#{agency.city}, #{agency.state} #{agency.zip_code}"
+          %p.right
+            = agency.description

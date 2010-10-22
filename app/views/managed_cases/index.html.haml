@@ -1,0 +1,10 @@
+- content_for :sidebar do
+  = render :partial => 'shared/search', :locals => { :search_path => managed_cases_path }
+
+- if @managed_cases.empty?
+  %h2 No cases found
+
+- else
+  %h2= "#{@managed_cases.size} #{pluralize(@managed_cases.size, 'match')}"
+  %hr
+

@@ -1,14 +1,11 @@
-- form_tag people_path, :class=>'search', :method => :get do
-  %dl
-    %dt= label_tag :query
-    %dd= text_field_tag :query
-  = submit_tag 'Search'
+- content_for :sidebar do
+  = render :partial => 'shared/search', :locals => { :search_path => people_path }
 
 - if @people.empty?
-  %p No people found
+  %h2 No people found
 
 - else
-  %p= "#{@people.size} #{pluralize(@people.size, 'match')}"
+  %h2= "#{pluralize(@people.size, 'match')}"
   %hr
   - for person in @people do
     = render :partial => 'person_tile', :locals => { :person => person }

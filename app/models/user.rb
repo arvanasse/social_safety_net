@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   end
 
   belongs_to :account
+  has_many   :agencies, :through => :account
 
   validates_presence_of     :account
   validates_numericality_of :account_id,

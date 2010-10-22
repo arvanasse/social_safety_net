@@ -5,6 +5,10 @@ ActionController::Routing::Routes.draw do |map|
     person.resources :managed_cases
   end
 
+  map.resources :managed_cases
+
+  map.resources :agencies
+
   map.resources :site, :collection => { :list => :get, :dashboard => :get, :cases=>:get }
   
   map.login  'login',  :controller => 'sessions', :action => 'new'

@@ -1,7 +1,7 @@
 class CreateManagedCases < ActiveRecord::Migration
   def self.up
     create_table :managed_cases do |t|
-      t.references :cost_center
+      t.references :agency
       t.references :parent
       t.string :state
       t.string :title
@@ -12,9 +12,9 @@ class CreateManagedCases < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :managed_cases, [:cost_center_id, :state]
-    add_index :managed_cases, [:cost_center_id, :title]
-    add_index :managed_cases, [:cost_center_id, :reference]
+    add_index :managed_cases, [:agency_id, :state]
+    add_index :managed_cases, [:agency_id, :title]
+    add_index :managed_cases, [:agency_id, :reference]
     add_index :managed_cases, :parent_id
   end
 

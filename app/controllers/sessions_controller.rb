@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_filter :require_user, [ :new, :create ]
   def new
     @user_session = UserSession.new
   end

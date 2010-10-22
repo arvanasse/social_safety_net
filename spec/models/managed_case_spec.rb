@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe ManagedCase do
   before(:each) do
     @valid_attributes = {
-      :cost_center => mock_model(CostCenter, 'destroyed?' => false),
+      :agency => mock_model(Agency, 'destroyed?' => false),
       :title => "value for title",
       :reference => "value for reference"
     }
@@ -13,7 +13,7 @@ describe ManagedCase do
     lambda{ ManagedCase.create(@valid_attributes) }.should change(ManagedCase, :count).by(1)
   end
 
-  [:cost_center, :title].each do |required_attr|
+  [:agency, :title].each do |required_attr|
     it "should require a #{required_attr}" do
       @valid_attributes.delete required_attr
       lambda{ ManagedCase.create(@valid_attributes) }.should_not change(ManagedCase, :count)

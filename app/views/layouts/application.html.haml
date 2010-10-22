@@ -12,13 +12,15 @@
         %h1 Carolina People Helpers
         %h2 Case Management
         %ul.tabs.right
-          %li{:class=>(controller.action_name == 'dashboard' ? 'selected' : nil)}= link_to("Home", dashboard_site_path)
-          %li{:class=>(controller.action_name == 'cases' ? 'selected' : nil)}= link_to("Cases", cases_site_path)
-          %li{:class => (controller.action_name == 'list' ? 'selected' : nil)}= link_to("People", list_site_path)
+          %li{:class=>(controller.action_name == 'cases' ? 'selected' : nil)}= link_to("Cases sample", cases_site_path)
+          %li{:class => (controller.controller_name == 'managed_cases' ? 'selected' : nil)}= link_to("Cases", managed_cases_path)
+          %li{:class => (controller.controller_name == 'agencies' ? 'selected' : nil)}= link_to("Agencies", agencies_path)
+          %li{:class => (controller.controller_name == 'people' ? 'selected' : nil)}= link_to("People", people_path)
         %ul.tabs
+          %li{:class=>(controller.action_name == 'dashboard' ? 'selected' : nil)}= link_to("Home", dashboard_site_path)
           %li= link_to("Case 1234", root_path)
           %li= link_to("Case 14", root_path)
-          %li{:class => (controller.action_name == 'index' ? 'selected' : nil)}= link_to("Case 124", root_path)
+          %li{:class => (controller.controller_name == 'managed_cases' ? 'selected' : nil)}= link_to("Case 124", root_path)
           %li= link_to("Case 1354", root_path)
         #user
           %ul

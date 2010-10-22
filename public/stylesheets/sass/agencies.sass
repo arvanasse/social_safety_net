@@ -1,0 +1,35 @@
+.agency_form
+  +column(23, true)
+  padding-top: 1em
+  .left
+    +column(11)
+  .right
+    +prepend(1)
+    +column(11, true)
+
+ul.agencies
+  li
+    a
+      color: black
+      .left
+        +column(5)
+      .right
+        +prepend(1)
+        +column(10, true)
+    a:hover
+      text-decoration: none
+
+#agency_name
+  :width 32.8em
+#agency_street
+  :height 3.8em
+  :width 32.8em
+#agency_city
+  :width 18em
+#agency_state
+  :width 4em
+#agency_zip_code
+  :width 8em
+#agency_description
+  :width 32.8em
+  :height 14em

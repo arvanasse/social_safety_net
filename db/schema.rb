@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100527181619) do
+ActiveRecord::Schema.define(:version => 20100618194001) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -23,6 +23,21 @@ ActiveRecord::Schema.define(:version => 20100527181619) do
 
   add_index "accounts", ["bill_on"], :name => "index_accounts_on_bill_on"
   add_index "accounts", ["host"], :name => "index_accounts_on_host"
+
+  create_table "agencies", :force => true do |t|
+    t.integer  "account_id"
+    t.string   "name"
+    t.text     "description"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip_code"
+    t.string   "zip4"
+    t.float    "lat"
+    t.float    "lng"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "case_histories", :force => true do |t|
     t.integer  "managed_case_id"
@@ -50,18 +65,8 @@ ActiveRecord::Schema.define(:version => 20100527181619) do
     t.datetime "updated_at"
   end
 
-  create_table "cost_centers", :force => true do |t|
-    t.integer  "account_id"
-    t.string   "type"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "cost_centers", ["account_id", "name"], :name => "index_cost_centers_on_account_id_and_name"
-
   create_table "managed_cases", :force => true do |t|
-    t.integer  "cost_center_id"
+    t.integer  "agency_id"
     t.integer  "parent_id"
     t.string   "state"
     t.string   "title"
@@ -72,9 +77,9 @@ ActiveRecord::Schema.define(:version => 20100527181619) do
     t.datetime "updated_at"
   end
 
-  add_index "managed_cases", ["cost_center_id", "reference"], :name => "index_managed_cases_on_cost_center_id_and_reference"
-  add_index "managed_cases", ["cost_center_id", "state"], :name => "index_managed_cases_on_cost_center_id_and_state"
-  add_index "managed_cases", ["cost_center_id", "title"], :name => "index_managed_cases_on_cost_center_id_and_title"
+  add_index "managed_cases", ["agency_id", "reference"], :name => "index_managed_cases_on_agency_id_and_reference"
+  add_index "managed_cases", ["agency_id", "state"], :name => "index_managed_cases_on_agency_id_and_state"
+  add_index "managed_cases", ["agency_id", "title"], :name => "index_managed_cases_on_agency_id_and_title"
   add_index "managed_cases", ["parent_id"], :name => "index_managed_cases_on_parent_id"
 
   create_table "people", :force => true do |t|
@@ -87,6 +92,8 @@ ActiveRecord::Schema.define(:version => 20100527181619) do
     t.string   "state"
     t.string   "zip_code"
     t.string   "zip4"
+    t.float    "lat"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

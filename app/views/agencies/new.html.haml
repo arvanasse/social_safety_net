@@ -1,0 +1,7 @@
+- form_for @agency, :html => { :class => 'bp agency_form' } do |f|
+  %h1 New Agency
+  %hr
+
+  = render :partial => 'agencies/form'
+
+  = submit_tag "Create Agency"

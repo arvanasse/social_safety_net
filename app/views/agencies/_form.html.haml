@@ -1,0 +1,23 @@
+- fields_for :agency do |f|
+  = error_messages_for :agency
+
+  .left
+    %dl
+      %dt= f.label :name
+      %dd= f.text_field :name
+
+      %dt= f.label :street, "Street Address"
+      %dd= f.text_area :street
+
+      %dt= f.label :city, "City/State/Zip"
+      %dd
+        = f.text_field :city
+        = f.text_field :state
+        = f.text_field :zip_code
+
+  .right.last
+    %dl
+      %dt= f.label :description
+      %dd= f.text_area :description
+
+

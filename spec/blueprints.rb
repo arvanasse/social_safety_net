@@ -27,3 +27,19 @@ Person.blueprint do
   state{ Faker::Address.us_state_abbr }
   zip_code{ Faker::Address.zip_code }
 end
+
+Agency.blueprint do
+  name{ Faker::Lorem.words }
+  description{ Faker::Lorem.paragraph }
+  street{ Faker::Address.street_address }
+  city{ Faker::Address.city }
+  state{ Faker::Address.us_state_abbr }
+  zip_code{ Faker::Address.zip_code }
+end
+
+ManagedCase.blueprint do
+  agency
+  title{ Faker::Lorem.words }
+  reference{ "#{Date.today.year}%04d" % rand(10000) }
+  opened_on{ rand(180).days.ago.to_date }
+end

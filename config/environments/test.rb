@@ -33,4 +33,3 @@ config.gem 'rspec-rails', :version => '1.3.2', :lib => false
 config.gem 'rspec', :version => '1.3.0', :lib => false
 config.gem "machinist", :version => '1.0.6'
 config.gem 'faker'
-

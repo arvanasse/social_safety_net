@@ -1,6 +1,6 @@
 class Account < ActiveRecord::Base
   has_many  :users
-  has_many  :cost_centers
+  has_many  :agencies
 
   validates_presence_of :name, :host
 

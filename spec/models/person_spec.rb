@@ -1,4 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require File.expand_path(File.dirname(__FILE__) + '/addressed_spec')
 
 describe Person do
   before(:each) do
@@ -47,38 +48,19 @@ describe Person do
     end
   end
 
-  describe '#full_address' do
+  context 'when valid' do
     before :each do
-      @valid_attributes.merge! :street => '207 S. Staghorn Ln', :city => 'Greer', :state => 'SC', :zip_code => '29650', :zip4 => nil
-      @person = Person.new @valid_attributes
-      @basic_address = "#{@valid_attributes[:street]}, #{@valid_attributes[:city]}, #{@valid_attributes[:state]} #{@valid_attributes[:zip_code]}"
+      @address_attributes = { 
+        :street => '207 S. Staghorn Ln', 
+        :city => 'Greer', 
+        :state => 'SC', 
+        :zip_code => '29650', 
+        :zip4 => nil 
+      }
+
+      @addressed = Person.new @valid_attributes.merge! @address_attributes
     end
 
-    it "should concatenate address parts as street, city, state zip" do
-      @person.full_address.should eql(@basic_address)
-    end
-
-    context 'with zip4' do
-      before :each do
-        @person.zip4 = '4065'
-      end
-
-      it "should append -zip4" do
-        @person.full_address.should eql(@basic_address << '-' << @person.zip4)
-      end
-    end
-
-    context 'with a multi-line street address' do
-      before :each do
-        @person.street = <<-EOS
-          909 Wesley Court
-          Suite C
-        EOS
-      end
-
-      it "should replace new-line characters with the separator" do
-        @person.full_address.should eql("#{@person.street.gsub("\n", ", ")}, #{@person.city}, #{@person.state} #{@person.zip_code}")
-      end
-    end
+    it_should_behave_like 'any object with a street address'
   end
 end

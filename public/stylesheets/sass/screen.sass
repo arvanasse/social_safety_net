@@ -11,6 +11,7 @@
 
 @import person.sass
 @import cases.sass
+@import agencies.sass
 
 +blueprint-typography("body.bp")
 +blueprint-scaffolding("body.bp")
@@ -92,6 +93,10 @@ body.bp
     +column(23, true)
     &.with-sidebar
       +column(17)
+      .left
+        +column(8)
+      .right
+        +column(8, true)
     h2
       margin-top: 1em
       border-bottom= 1px "solid" !border_color
@@ -155,3 +160,6 @@ body.bp
       margin: .5em auto
 form.bp
   +blueprint-form
+  dl
+    dd
+      margin-left: 0

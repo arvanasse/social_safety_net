@@ -1,13 +1,13 @@
 class ManagedCase < ActiveRecord::Base
-  belongs_to :cost_center
+  belongs_to :agency
 
   has_many :case_histories
 
   has_many :case_participants
   has_many :participants, :through => :case_participants, :source => :participant
 
-  validates_presence_of :cost_center, :title
-  validates_numericality_of :cost_center_id, :allow_nil=>true,
+  validates_presence_of :agency, :title
+  validates_numericality_of :agency_id, :allow_nil=>true,
                             :greater_than => 0, :only_integer=>true,
                             :message => 'must be a valid reference'
 

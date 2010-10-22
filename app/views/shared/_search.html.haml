@@ -1,0 +1,7 @@
+- form_tag search_path, :class => 'search', :method => :get do
+  %dl
+    %dt= label_tag :query, 'Search'
+    %dd{ :style => 'padding-left: 0;' }
+      = text_field_tag :query
+      = submit_tag 'Search'
+

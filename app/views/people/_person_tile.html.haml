@@ -3,11 +3,11 @@
 
   .info
     %h3.name= person.full_name
-    .addr.quiet = person.full_address
-  .assist
-    %p
-      %strong Latest Assistance
-      None
+    .addr.quiet= person.full_address
+    .assist
+      %p
+        %strong Latest Assistance
+        None
   .tools
     = link_to pluralize(person.managed_cases.size, 'Case'), person_managed_cases_path(person), :class => 'case-list'
     = link_to "Create a New Case", new_person_managed_case_path(person), :class => 'case-create'
