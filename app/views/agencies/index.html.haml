@@ -13,13 +13,13 @@
   %h2= "#{pluralize(@agencies.size, 'match')}"
   %ul.agencies
     - for agency in @agencies do
-      %li{:class=>cycle('odd','even')}
+      %li.agency{:class=>cycle('odd','even')}
         - link_to agency_path(agency) do
-          %p.left
-            = agency.name
-            %br
-            = agency.street
-            %br
-            = "#{agency.city}, #{agency.state} #{agency.zip_code}"
-          %p.right
+          .info
+            .name= agency.name
+            .address
+              = agency.street
+              %br
+              = "#{agency.city}, #{agency.state} #{agency.zip_code}"
+          .description
             = agency.description

@@ -81,243 +81,6 @@ a img {
   border: none;
 }
 
-/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 710px;
-  padding: 1em 5px;
-  font-size: 110%;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .person {
-  overflow-x: hidden;
-}
-/* line 5, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person:hover {
-  background-color: #e0c07e !important;
-  cursor: pointer;
-}
-/* line 8, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .image {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 70px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .person .image {
-  overflow-x: hidden;
-}
-/* line 10, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .image img {
-  background-color: white;
-  padding: 3px;
-  width: 60px;
-  display: block;
-  margin: 0 auto;
-}
-/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .info {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 470px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .person .info {
-  overflow-x: hidden;
-}
-/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .info h3.name {
-  margin: 0;
-  font-size: 110%;
-}
-/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .info p {
-  margin-bottom: 0;
-}
-/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .tools {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 150px;
-  text-align: right;
-  font-size: 90%;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .person .tools {
-  overflow-x: hidden;
-}
-/* line 28, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
-.person .tools a {
-  display: block;
-}
-
-/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 630px;
-  padding: 1em 5px;
-  font-size: 110%;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .managed-case {
-  overflow-x: hidden;
-}
-/* line 5, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case:hover {
-  background-color: #e0c07e !important;
-  cursor: pointer;
-}
-/* line 8, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .image {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 70px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .managed-case .image {
-  overflow-x: hidden;
-}
-/* line 10, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .image img {
-  background-color: white;
-  padding: 3px;
-  width: 60px;
-  display: block;
-  margin: 0 auto;
-}
-/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .info {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 550px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .managed-case .info {
-  overflow-x: hidden;
-}
-/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .info h5 {
-  margin: 0;
-  font-size: 110%;
-}
-/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .info p {
-  margin-bottom: 0;
-}
-/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
-.managed-case .info .reminder {
-  margin-top: 0.5em;
-}
-
-/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-.agency_form {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 910px;
-  padding-top: 1em;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .agency_form {
-  overflow-x: hidden;
-}
-/* line 4, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-.agency_form .left {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 430px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .agency_form .left {
-  overflow-x: hidden;
-}
-/* line 6, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-.agency_form .right {
-  padding-left: 40px;
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 430px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html .agency_form .right {
-  overflow-x: hidden;
-}
-
-/* line 12, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-ul.agencies li a {
-  color: black;
-}
-/* line 14, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-ul.agencies li a .left {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 190px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html ul.agencies li a .left {
-  overflow-x: hidden;
-}
-/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-ul.agencies li a .right {
-  padding-left: 40px;
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 390px;
-}
-/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
-* html ul.agencies li a .right {
-  overflow-x: hidden;
-}
-/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-ul.agencies li a:hover {
-  text-decoration: none;
-}
-
-/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_name {
-  width: 32.8em;
-}
-
-/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_street {
-  height: 3.8em;
-  width: 32.8em;
-}
-
-/* line 27, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_city {
-  width: 18em;
-}
-
-/* line 29, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_state {
-  width: 4em;
-}
-
-/* line 31, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_zip_code {
-  width: 8em;
-}
-
-/* line 33, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
-#agency_description {
-  width: 32.8em;
-  height: 14em;
-}
-
 /* line 39, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/./blueprint/./_typography.scss */
 body.bp {
   line-height: 1.5;
@@ -572,7 +335,7 @@ body.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 26, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp {
   background-color: #434d53;
 }
@@ -686,7 +449,7 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
-/* line 31, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 27, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp a {
   text-decoration: none;
 }
@@ -694,15 +457,15 @@ body.bp a {
 body.bp a:hover {
   text-decoration: underline;
 }
-/* line 33, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 29, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp .hidden {
   display: none;
 }
-/* line 35, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 31, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp .even {
   background-color: #d8d8d8;
 }
-/* line 37, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 33, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #wrap {
   width: 950px;
   margin: 0 auto;
@@ -714,7 +477,7 @@ body.bp #wrap {
 body.bp #wrap {
   display: block;
 }
-/* line 40, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 36, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header {
   display: inline;
   float: left;
@@ -727,24 +490,24 @@ body.bp #header {
 * html body.bp #header {
   overflow-x: hidden;
 }
-/* line 44, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 40, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header h1, body.bp #header h2 {
   font-weight: bold;
 }
-/* line 46, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 42, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header h1 {
   color: white;
   padding: 0.5em 0 0 0;
   margin: 0;
 }
-/* line 50, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 46, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header h2 {
   padding: 0;
   margin: 0 0 1em 0;
   color: #bbbbbb;
   font-size: 140%;
 }
-/* line 55, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 51, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.tabs {
   margin: 0;
   padding: 0;
@@ -777,13 +540,13 @@ body.bp #header ul.tabs li:first-child, body.bp #header ul.tabs li.first {
 body.bp #header ul.tabs li:last-child, body.bp #header ul.tabs li.last {
   padding-right: 0px;
 }
-/* line 58, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 54, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.tabs li {
   margin: 0;
   padding: 0;
   padding-right: 2px;
 }
-/* line 62, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 58, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.tabs li a {
   display: block;
   padding: 0.65em;
@@ -792,31 +555,31 @@ body.bp #header ul.tabs li a {
   font-size: 110%;
   color: white;
 }
-/* line 69, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 65, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.tabs li a:hover {
   background-color: #e0c07e;
 }
-/* line 71, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 67, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.tabs li.selected a {
   background-color: white;
   color: #333333;
 }
-/* line 74, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 70, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.right {
   float: right;
 }
-/* line 76, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 72, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header ul.right li {
   padding: 0 0 0 2px;
 }
-/* line 78, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 74, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header #user {
   position: absolute;
   right: 0.5em;
   top: 0.5em;
   color: #eeeeee;
 }
-/* line 83, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 79, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header #user a {
   color: #eeeeee;
 }
@@ -824,7 +587,7 @@ body.bp #header #user a {
 body.bp #header #user a:hover {
   color: #cccccc;
 }
-/* line 85, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 81, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header #user ul {
   margin: 0;
   padding: 0;
@@ -856,15 +619,15 @@ body.bp #header #user ul li:first-child, body.bp #header #user ul li.first {
 body.bp #header #user ul li:last-child, body.bp #header #user ul li.last {
   padding-right: 0px;
 }
-/* line 87, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 83, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header #user ul li {
   border-left: 1px solid #888888;
 }
-/* line 89, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 85, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #header #user ul li:first-child {
   border: none;
 }
-/* line 91, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 87, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content {
   padding-left: 40px;
   display: inline;
@@ -876,7 +639,7 @@ body.bp #content {
 * html body.bp #content {
   overflow-x: hidden;
 }
-/* line 94, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 90, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content.with-sidebar {
   display: inline;
   float: left;
@@ -887,7 +650,7 @@ body.bp #content.with-sidebar {
 * html body.bp #content.with-sidebar {
   overflow-x: hidden;
 }
-/* line 96, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 92, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content.with-sidebar .left {
   display: inline;
   float: left;
@@ -898,7 +661,7 @@ body.bp #content.with-sidebar .left {
 * html body.bp #content.with-sidebar .left {
   overflow-x: hidden;
 }
-/* line 98, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 94, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content.with-sidebar .right {
   display: inline;
   float: left;
@@ -909,12 +672,12 @@ body.bp #content.with-sidebar .right {
 * html body.bp #content.with-sidebar .right {
   overflow-x: hidden;
 }
-/* line 100, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 96, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content h2 {
   margin-top: 1em;
   border-bottom: 1px solid #dddddd;
 }
-/* line 103, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 99, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul {
   margin: 0;
   list-style: none;
@@ -925,15 +688,15 @@ body.bp #content ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 106, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 102, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul.history, body.bp #content ul.people {
   font-size: 110%;
 }
-/* line 109, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 105, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul li span {
   padding: 0.5em 0;
 }
-/* line 111, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 107, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul li span.date {
   display: inline;
   float: left;
@@ -945,7 +708,7 @@ body.bp #content ul li span.date {
 * html body.bp #content ul li span.date {
   overflow-x: hidden;
 }
-/* line 114, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 110, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul li span.description {
   display: inline;
   float: left;
@@ -956,20 +719,20 @@ body.bp #content ul li span.description {
 * html body.bp #content ul li span.description {
   overflow-x: hidden;
 }
-/* line 116, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 112, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul li.odd span.description {
   background-color: #eeeeee;
 }
-/* line 120, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 116, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul.history li a {
   color: transparent;
   background: url(/images/updown.png) 0px 0px no-repeat;
 }
-/* line 123, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 119, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #content ul.history li a.down {
   background-position: 0px -16px;
 }
-/* line 125, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 121, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar {
   display: inline;
   float: left;
@@ -983,31 +746,31 @@ body.bp #sidebar {
 * html body.bp #sidebar {
   overflow-x: hidden;
 }
-/* line 20, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 .boxshadow body.bp #sidebar {
   border: none;
   -webkit-box-shadow: #666666 1px 1px 1px;
   -moz-box-shadow: #666666 1px 1px 1px;
   box-shadow: #666666 1px 1px 1px;
 }
-/* line 131, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 127, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar img.client {
   background-color: white;
   padding: 5px;
   margin: 0 auto 0.5em auto;
   display: block;
 }
-/* line 136, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 132, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar span.addr {
   display: block;
 }
-/* line 138, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 134, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar h3 {
   margin: 0;
   font-weight: bold;
   color: #444444;
 }
-/* line 142, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 138, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar h4 {
   color: #444444;
   font-weight: bold;
@@ -1016,18 +779,18 @@ body.bp #sidebar h4 {
   margin: 1em auto 0 auto;
   border-bottom: 1px solid #dddddd;
 }
-/* line 149, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 145, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar p {
   width: 80%;
   margin: 0 auto;
   text-align: left;
 }
-/* line 153, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 149, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #sidebar dt, body.bp #sidebar dd {
   text-align: left;
   padding-left: 1em;
 }
-/* line 156, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 152, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #footer {
   display: inline;
   float: left;
@@ -1038,7 +801,7 @@ body.bp #footer {
 * html body.bp #footer {
   overflow-x: hidden;
 }
-/* line 158, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 154, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 body.bp #footer p {
   text-align: center;
   margin: 0.5em auto;
@@ -1105,7 +868,244 @@ form.bp textarea {
   width: 390px;
   height: 250px;
 }
-/* line 164, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
+/* line 160, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/screen.sass */
 form.bp dl dd {
   margin-left: 0;
+}
+
+/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 710px;
+  padding: 1em 5px;
+  font-size: 110%;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .person {
+  overflow-x: hidden;
+}
+/* line 5, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person:hover {
+  background-color: #e0c07e !important;
+  cursor: pointer;
+}
+/* line 8, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .image {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .person .image {
+  overflow-x: hidden;
+}
+/* line 10, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .image img {
+  background-color: white;
+  padding: 3px;
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .info {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 470px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .person .info {
+  overflow-x: hidden;
+}
+/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .info h3.name {
+  margin: 0;
+  font-size: 110%;
+}
+/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .info p {
+  margin-bottom: 0;
+}
+/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .tools {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 150px;
+  text-align: right;
+  font-size: 90%;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .person .tools {
+  overflow-x: hidden;
+}
+/* line 28, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/person.sass */
+.person .tools a {
+  display: block;
+}
+
+/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 630px;
+  padding: 1em 5px;
+  font-size: 110%;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .managed-case {
+  overflow-x: hidden;
+}
+/* line 5, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case:hover {
+  background-color: #e0c07e !important;
+  cursor: pointer;
+}
+/* line 8, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .image {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 70px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .managed-case .image {
+  overflow-x: hidden;
+}
+/* line 10, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .image img {
+  background-color: white;
+  padding: 3px;
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .info {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .managed-case .info {
+  overflow-x: hidden;
+}
+/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .info h5 {
+  margin: 0;
+  font-size: 110%;
+}
+/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .info p {
+  margin-bottom: 0;
+}
+/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/cases.sass */
+.managed-case .info .reminder {
+  margin-top: 0.5em;
+}
+
+/* line 1, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+.agency_form {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 910px;
+  padding-top: 1em;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .agency_form {
+  overflow-x: hidden;
+}
+/* line 4, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+.agency_form .left {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .agency_form .left {
+  overflow-x: hidden;
+}
+/* line 6, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+.agency_form .right {
+  padding-left: 40px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html .agency_form .right {
+  overflow-x: hidden;
+}
+
+/* line 12, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+ul.agencies li.agency a {
+  color: black;
+}
+/* line 14, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+ul.agencies li.agency a .info {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html ul.agencies li.agency a .info {
+  overflow-x: hidden;
+}
+/* line 16, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+ul.agencies li.agency a .description {
+  padding-left: 40px;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 390px;
+}
+/* line 138, /usr/local/lib/ruby/gems/1.8/gems/compass-0.10.1/frameworks/blueprint/stylesheets/blueprint/./_grid.scss */
+* html ul.agencies li.agency a .description {
+  overflow-x: hidden;
+}
+/* line 19, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+ul.agencies li.agency a:hover {
+  text-decoration: none;
+}
+
+/* line 22, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_name {
+  width: 32.8em;
+}
+
+/* line 24, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_street {
+  height: 3.8em;
+  width: 32.8em;
+}
+
+/* line 27, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_city {
+  width: 18em;
+}
+
+/* line 29, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_state {
+  width: 4em;
+}
+
+/* line 31, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_zip_code {
+  width: 8em;
+}
+
+/* line 33, /Users/arvanasse/Projects/CaseManagementCore/public/stylesheets/sass/agencies.sass */
+#agency_description {
+  width: 32.8em;
+  height: 14em;
 }

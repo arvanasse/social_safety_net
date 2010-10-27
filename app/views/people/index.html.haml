@@ -6,6 +6,5 @@
 
 - else
   %h2= "#{pluralize(@people.size, 'match')}"
-  %hr
   - for person in @people do
     = render :partial => 'person_tile', :locals => { :person => person }
